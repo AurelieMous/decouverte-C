@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+// permet de définir une constante de préprocesseur, autrement dit, d'associer une valeur à un mot.
+#define TAILLE_MAX 100
 
 int main(int argc, char *argv[])
 {
@@ -24,9 +26,11 @@ int main(int argc, char *argv[])
     *(tableau + 1) ;// Identique : renvoie la valeur contenue dans la seconde case
     */
 
-    // tableau dynamique
-    int colonne = 5;
-    int tableau2[colonne];
+    // tableau dynamique a ne pas faire
+    /* int colonne = 5;
+    int tableau2[colonne]; */
+    // mais plustot avec define
+    int tableau2[TAILLE_MAX];
 
     for (i=0; i<6; i++)
     {

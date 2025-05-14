@@ -5,6 +5,22 @@
 #include <stdlib.h>
 // Bibliothèque mathématique
 #include <math.h>
+// Permet également de faire des petits calculs de base
+#define LARGEUR_FENETRE  800
+#define HAUTEUR_FENETRE  600
+#define NOMBRE_PIXELS    (LARGEUR_FENETRE * HAUTEUR_FENETRE)
+
+/* Constante prédéfinie
+ * Chacune de ces constantes commence et se termine par deux symboles "underscore" _
+ * (vous trouverez ce symbole sous le chiffre 8, tout du moins si vous avez un clavier AZERTY français).
+* __LINE__ donne le numéro de la ligne actuelle.
+* __FILE__ donne le nom du fichier actuel.
+* __DATE__ donne la date de la compilation.
+* __TIME__ donne l'heure de la compilation.
+ */
+
+// Utilisation de MAcro
+#define COUCOU() printf("Coucou");
 
 // déclaration d'une variable globale en dehors de main
 // a éviter tout de même
@@ -52,6 +68,10 @@ int main(int argc, char *argv[])
     printf("L'adresse de la variable age est : %p", &age);
     // age représente la valeur
     // &age représente l'adresse
+
+    //Ces constantes peuvent être utiles pour gérer des erreurs, en faisant par exemple ceci :
+    printf("Erreur a la ligne %d du fichier %s\n", __LINE__, __FILE__);
+    printf("Ce fichier a ete compile le %s a %s\n", __DATE__, __TIME__);
 
     // Chaque programme, une fois terminé, retourne un chiffre
     // Si c'est 0 c'est que tout s'est bien passé
