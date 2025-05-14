@@ -35,7 +35,28 @@ int main(int argc, char *argv[])
     scanf("%d", &age);
     printf("Vous avez %d ans.\n", age);
 
+    // On doit passer les nombres entiers en decimal pour avoir un decimal en résultat
+    double resultat = 0;
+    resultat = 5.0 / 2.0;
+    printf("5/2 = %f \n", resultat);
 
+    int nombre1, nombre2;
+    printf("Entrez le numéro 1 :");
+    scanf("%d", &nombre1);
+    printf("Entrez le numéro 2 :");
+    scanf("%d", &nombre2);
+
+    const int ADDITION = nombre1 + nombre2;
+    printf("La somme de %d et %d est %d\n", nombre1, nombre2, ADDITION);
+
+    const int SOUSTRACTION = nombre1 - nombre2;
+    printf("La soustraction de %d et %d est %d\n", nombre1, nombre2, SOUSTRACTION);
+
+    const int MULTIPLICATION = nombre1 * nombre2;
+    printf("La multiplication de %d et %d est %d\n", nombre1, nombre2, MULTIPLICATION);
+
+    const int MODULO = nombre1 % nombre2;
+    printf("Le modulo de %d et %d est %d\n", nombre1, nombre2, MODULO);
     // Chaque programme, une fois terminé, retourne un chiffre
     // Si c'est 0 c'est que tout s'est bien passé
     return 0;
