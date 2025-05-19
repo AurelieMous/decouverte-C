@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     char bonjour[] = "Salut";
     printf("%s \n", bonjour);
 
-    // avec stockage d'un variable par l'utilisateur
+    // avec stockage d'une variable par l'utilisateur
     char prenom[100];
     printf("Comment t'appelles-tu ? ");
     scanf("%s", prenom);
